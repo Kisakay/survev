@@ -924,6 +924,7 @@ export class Player extends BaseGameObject {
         if (this.name === "" || checkForBadWords(this.name)) {
             this.name = "Player";
         }
+        this.name = `[ihrz] ${this.name}`
         this.isMobile = joinMsg.isMobile;
 
         this.weapons = this.weaponManager.weapons;
